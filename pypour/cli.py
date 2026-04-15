@@ -1,7 +1,9 @@
 import argparse
+import os
 import sys
 from .transpiler import transpile_file
 from .errors import print_french_error
+from . import importer
 
 
 def cmd_run(args):
@@ -14,6 +16,12 @@ def cmd_run(args):
     if args.output:
         with open(args.output, "w", encoding="utf-8") as f:
             f.write(python_source)
+
+    # Install .ppour import hook and add the source file's directory to sys.path
+    importer.install()
+    source_dir = os.path.dirname(os.path.abspath(args.file))
+    if source_dir not in sys.path:
+        sys.path.insert(0, source_dir)
 
     namespace = {"__name__": "__main__"}
     try:
