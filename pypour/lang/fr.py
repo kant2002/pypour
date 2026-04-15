@@ -7,6 +7,7 @@ KEYWORDS = {
     "pour": "for",
     "dans": "in",
     "fonction": "def",
+    "déf": "def",
     "retourner": "return",
     "classe": "class",
     "importer": "import",
