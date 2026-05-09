@@ -1,0 +1,14 @@
+a = 837 # Le premier nombre
+b = 233 # Deuxième numéro
+c = 123     # Troisième numéro
+# Si a est supérieur à b et c, alors a est le plus grand
+si (a >= b et a >= c):
+    afficher("Le plus grand des trois: ", a)
+
+# Si b est supérieur à a et c, alors b est le plus grand
+si (b >= a et b >= c):
+    afficher("Le plus grand des trois: ", b)
+
+# Si c est supérieur à a et b, alors c est le plus grand
+si (c >= a et c >= b):
+    afficher("Le plus grand des trois: ", c)

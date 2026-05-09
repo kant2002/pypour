@@ -1,0 +1,25 @@
+ANNÉE = entier(saisir("Année "))
+MOIS = entier(saisir("Mois "))
+JOUR = entier(saisir("Jour "))
+
+
+afficher(JOUR,"/", MOIS, "/", ANNÉE)
+
+si (ANNÉE % 4 == 0):
+    FÉVRIER_MAX = 29
+sinon:
+    FÉVRIER_MAX = 28
+
+M = MOIS
+J = JOUR
+
+si (M <1) ou (M >12):
+     afficher("Le mois n'est pas valide")
+sinonsi (J < 1) ou (J > 31):
+     afficher("La journée n'est pas valable")
+sinonsi (J == 31) et (M == 4 ou M == 6 ou M == 9 ou M == 11):
+     afficher("Il n'y a pas de 31 ce mois-ci.")
+sinonsi (M == 2) et (J > FÉVRIER_MAX):
+     afficher(f"Février ne compte que {FÉVRIER_MAX} jours ")
+sinon:
+     afficher("Cette date est valable.")

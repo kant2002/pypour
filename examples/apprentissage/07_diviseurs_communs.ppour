@@ -1,0 +1,8 @@
+a = 28
+b = 42
+
+afficher("Diviseurs communs ",a," і ",b)
+
+pour c dans portee(1, a + 1):
+     si (a % c == 0) et (b % c == 0):
+        afficher(c)

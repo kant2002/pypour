@@ -1,0 +1,6 @@
+afficher("Tableau des valeurs de fonction y = 3*x*x - 7*x + 2")
+afficher("dans l'espace x = 0 .. x = 10")
+
+pour x dans portee(10+1):
+    y = 3*x*x - 7*x + 2
+    afficher("y(",x, ") = ", y)

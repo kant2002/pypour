@@ -1,0 +1,16 @@
+héros = saisir("Héros: ")
+amie = saisir("Amie: ")
+ennemi = saisir("Ennemi: ")
+
+afficher(
+    f"""
+    L’histoire raconte les exploits du glorieux {héros} et 
+    de son fidèle compagnon {amie}, qui s’opposèrent au redoutable {ennemi}.
+
+    Une {héros} épuisé(e) partit à travers une terre brisée pour arrêter l’ombre grandissante,
+    guidée uniquement par son courage et une promesse qu’il/elle comprenait à peine.
+    Son/sa fidèle amie {amie} marchait à ses côtés à travers chaque danger,
+    lui rappelant qui il/elle était chaque fois que le doute s’installait.
+    À la fin, ils affrontèrent ensemble {ennemi},
+    et ce ne fut pas la force mais leur lien indestructible qui fit basculer le destin.
+    """)

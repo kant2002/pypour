@@ -39,6 +39,8 @@ MESSAGE_FRAGMENTS = {
     "No module named": "Aucun module nommé",
     "No such file or directory": "Aucun fichier ou répertoire de ce nom",
     "bad operand type for unary": "type d'opérande incorrect pour l'opérateur unaire",
+    "not all arguments converted during string formatting": "tous les arguments ne sont pas convertis lors de la mise en forme des chaînes.",
+    "can't multiply sequence by non-int of type": "impossible de multiplier une séquence par un nombre non entier de type",
 }
 
 

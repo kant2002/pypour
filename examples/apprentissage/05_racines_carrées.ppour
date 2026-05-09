@@ -1,0 +1,18 @@
+importer math
+
+a = entier(saisir("Coefficient a: "))
+b = entier(saisir("Coefficient b: "))
+c = entier(saisir("Coefficient b: "))
+d = b*b - 4 * a * c
+si d < 0:
+    afficher("L'équation n'a pas de racines réelles.")
+sinon:
+    x1 = (-b - math.sqrt(d)) / (2 * a)
+    x2 = (-b + math.sqrt(d)) / (2 * a)
+    if d == 0:
+        afficher("L'équation possède une seule racine.")
+        afficher("x = ",x1)
+    sinon:
+        afficher("L'équation possède deux racines.")
+        afficher("x1 = ",x1)
+        afficher("x2 = ",x2)

@@ -1,0 +1,8 @@
+maximum = 10
+
+somme = 0
+
+pour nombre dans portee(1, maximum):
+    somme = somme + nombre
+
+afficher("Somme de tous les nombres de 1 à", maximum, " = ", somme)

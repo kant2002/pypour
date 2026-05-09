@@ -1,0 +1,9 @@
+a = 10
+b = 100
+afficher("Somme =", a + b)
+afficher("Produit =", a * b)
+x = 4
+y = x*x - 9*x + 14
+afficher("x = ", x)
+afficher("y = x*x - 9*x + 14")
+afficher("y = ", y)
